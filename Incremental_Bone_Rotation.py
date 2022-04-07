@@ -65,7 +65,7 @@ class IncrementalBoneRotation(bpy.types.Operator):
 
             Xdriver.driver.type = 'SCRIPTED'
             Xdriver.driver.use_self = True
-            Xdriver.driver.expression = "floor( self.rotation_euler.x /  float (radians(increment_rot))  ) * (radians(increment_rot))"
+            Xdriver.driver.expression = "round( self.rotation_euler.x /  float (radians(increment_rot))  ) * (radians(increment_rot))"
 
             #change driver variable properties
             Xvar = Xdriver.driver.variables.new()
@@ -99,7 +99,7 @@ class IncrementalBoneRotation(bpy.types.Operator):
 
             Ydriver.driver.type = 'SCRIPTED'
             Ydriver.driver.use_self = True
-            Ydriver.driver.expression = "floor( self.rotation_euler.y /  float (radians(increment_rot))  ) * (radians(increment_rot))"
+            Ydriver.driver.expression = "round( self.rotation_euler.y /  float (radians(increment_rot))  ) * (radians(increment_rot))"
 
             #change driver variable properties
             Yvar = Ydriver.driver.variables.new()
@@ -132,7 +132,7 @@ class IncrementalBoneRotation(bpy.types.Operator):
 
             Zdriver.driver.type = 'SCRIPTED'
             Zdriver.driver.use_self = True
-            Zdriver.driver.expression = "floor( self.rotation_euler.z /  float (radians(increment_rot))  ) * (radians(increment_rot))"
+            Zdriver.driver.expression = "round( self.rotation_euler.z /  float (radians(increment_rot))  ) * (radians(increment_rot))"
 
             #change driver variable properties
             Zvar = Zdriver.driver.variables.new()
