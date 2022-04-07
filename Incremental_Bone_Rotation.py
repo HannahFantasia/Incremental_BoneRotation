@@ -5,7 +5,7 @@ bl_info = {
     "blender": (2, 80, 0),
     "category": "Edit",
     "location": "3D Viewport",
-    "description": "Incremental bone rotation EAT SHIT PUSSIES, formula by Sas van Gulik, implemented by yours truly. ALSO TO REMOVE THE INCREMENTAL BONE ROTATION, RMEOVE THE DRIVER AND CUSTOM PROPERTY LOL IDFK HOW TO FIX THAT SHIT RN",
+    "description": " USE F3 AND TYPE IN INCREMENTAL BONE!!! Incremental bone rotation EAT SHIT PUSSIES, formula by Sas van Gulik, implemented by yours truly. ALSO TO REMOVE THE INCREMENTAL BONE ROTATION, RMEOVE THE DRIVER AND CUSTOM PROPERTY LOL IDFK HOW TO FIX THAT SHIT RN",
     "warning": "",
     "doc_url": "",
     "tracker_url": "",
