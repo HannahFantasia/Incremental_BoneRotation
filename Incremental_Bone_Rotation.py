@@ -95,7 +95,7 @@ class IncrementalBoneRotation(bpy.types.Operator):
 
             #create driver
 
-            Ydriver = obj.driver_add("rotation_euler", 0)
+            Ydriver = obj.driver_add("rotation_euler", 1)
 
             Ydriver.driver.type = 'SCRIPTED'
             Ydriver.driver.use_self = True
@@ -128,7 +128,7 @@ class IncrementalBoneRotation(bpy.types.Operator):
 
             #create driver
 
-            Zdriver = obj.driver_add("rotation_euler", 0)
+            Zdriver = obj.driver_add("rotation_euler", 2)
 
             Zdriver.driver.type = 'SCRIPTED'
             Zdriver.driver.use_self = True
