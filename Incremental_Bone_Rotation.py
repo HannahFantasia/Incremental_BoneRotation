@@ -145,24 +145,24 @@ class IncrementalBoneRotation(bpy.types.Operator):
 
         return {'FINISHED'}
 
-class RemoveBoneRotation(bpy.types.Operator):
-
-    def execute(self, context):
-
-        removeinc_x = bpy.ops.wm.properties_remove(data_path="active_pose_bone", property_name="increments_X")
-        removeinc_y = bpy.ops.wm.properties_remove(data_path="active_pose_bone", property_name="increments_Y")
-        removeinc_z = bpy.ops.wm.properties_remove(data_path="active_pose_bone", property_name="increments_Z")
-
-        if "FINISHED" in removeinc_x:
-            bpy.context.active_pose_bone.driver_remove("rotation_euler", 0)
-
-        if "FINISHED" in removeinc_y:
-            bpy.context.active_pose_bone.driver_remove("rotation_euler", 1)
-
-        if "FINISHED" in removeinc_z:
-            bpy.context.active_pose_bone.driver_remove("rotation_euler", 2)
-
-        return {'FINISHED'}
+# class RemoveBoneRotation(bpy.types.Operator):
+#
+#     def execute(self, context):
+#
+#         removeinc_x = bpy.ops.wm.properties_remove(data_path="active_pose_bone", property_name="increments_X")
+#         removeinc_y = bpy.ops.wm.properties_remove(data_path="active_pose_bone", property_name="increments_Y")
+#         removeinc_z = bpy.ops.wm.properties_remove(data_path="active_pose_bone", property_name="increments_Z")
+#
+#         if "FINISHED" in removeinc_x:
+#             bpy.context.active_pose_bone.driver_remove("rotation_euler", 0)
+#
+#         if "FINISHED" in removeinc_y:
+#             bpy.context.active_pose_bone.driver_remove("rotation_euler", 1)
+#
+#         if "FINISHED" in removeinc_z:
+#             bpy.context.active_pose_bone.driver_remove("rotation_euler", 2)
+#
+#         return {'FINISHED'}
 
 
 blender_classes = [
