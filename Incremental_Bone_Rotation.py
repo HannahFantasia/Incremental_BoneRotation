@@ -145,9 +145,6 @@ class IncrementalBoneRotation(bpy.types.Operator):
 
         return {'FINISHED'}
 
-class RemoveBoneRotation(bpy.types.Operator):
-
-    return{'FINISHED'}
 
 # class RemoveBoneRotation(bpy.types.Operator):
 #
@@ -170,8 +167,7 @@ class RemoveBoneRotation(bpy.types.Operator):
 
 
 blender_classes = [
-    IncrementalBoneRotation,
-    RemoveBoneRotation,
+    IncrementalBoneRotation
 ]
 
 
