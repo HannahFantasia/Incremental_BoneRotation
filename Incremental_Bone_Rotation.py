@@ -145,6 +145,10 @@ class IncrementalBoneRotation(bpy.types.Operator):
 
         return {'FINISHED'}
 
+class RemoveBoneRotation(bpy.types.Operator):
+
+        return{'FINISHED'}
+
 # class RemoveBoneRotation(bpy.types.Operator):
 #
 #     def execute(self, context):
