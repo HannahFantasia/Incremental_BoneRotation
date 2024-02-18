@@ -1,5 +1,7 @@
 # Incremental-Bone-Rotation
 
-just do F3 incremental bone rotation you dumbass.
+I needed this to make my rigs a lot more fun to use.
+
+just click f3 and type in: incremental bone rotation
 
 Install the .py file as an addon
